@@ -159,7 +159,7 @@
   /* Toque o clic: estallido de confeti y un saltito del "shhh" */
 
 
-  /* ---------- Música: fragmento de musica.mp3 (18:39 – 19:00) sonando en bucle ---------- */
+  /* ---------- Música: fragmento de la canción (18:40 – 19:00, sin el silencio inicial) sonando en bucle ---------- */
   const Musica = (() => {
     const VOL = .8;
     const audio = new Audio('musica-bucle.mp3');
