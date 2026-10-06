@@ -19,7 +19,7 @@ Invitación digital animada para compartir por enlace. Es una sola página web, 
 | Archivo | Para qué sirve |
 | --- | --- |
 | `index.html` | Invitación normal: estructura y textos |
-| `familia-41b62f76.html` | La misma invitación con el aviso "Válida para 1 persona" |
+| `oficina.html` | La misma invitación con el aviso "Válida para 1 persona" |
 | `estilos.css` | Colores, tamaños y animaciones |
 | `script.js` | Piñata, confeti, música, cuenta regresiva, mapa y WhatsApp |
 | `fondo.jpg` | Imagen de fondo de la tarjeta |
@@ -36,7 +36,7 @@ Sube estos siete archivos juntos, en la misma carpeta, a cualquier servicio de p
 
 ```
 index.html
-familia-41b62f76.html
+oficina.html
 estilos.css
 script.js
 fondo.jpg
@@ -49,9 +49,9 @@ musica-bucle.mp3
 Hay dos enlaces, y cada invitado recibe solo el suyo:
 
 - **Normal:** el enlace principal del sitio (`index.html`).
-- **Para 1 persona:** el mismo enlace terminado en `familia-41b62f76.html`. Muestra "Válida para 1 persona" y lo añade al mensaje de confirmación de WhatsApp.
+- **Para 1 persona:** el mismo enlace terminado en `oficina.html`. Muestra "Válida para 1 persona" y lo añade al mensaje de confirmación de WhatsApp.
 
-El nombre del segundo archivo lleva un código al azar para que nadie lo adivine cambiando el enlace normal. Las dos páginas comparten `estilos.css` y `script.js`, pero los textos están repetidos: si cambias un texto en `index.html`, cámbialo también en `familia-41b62f76.html`.
+Las dos páginas comparten `estilos.css` y `script.js`, pero los textos están repetidos: si cambias un texto en `index.html`, cámbialo también en `oficina.html`.
 
 ## Cómo cambiar los datos
 
@@ -77,4 +77,4 @@ Si cambias la fecha o el lugar, revisa también los mensajes de WhatsApp en `scr
 
 ## Al publicar cambios
 
-Las dos páginas cargan `estilos.css?v=8` y `script.js?v=8`. Cada vez que cambies `estilos.css` o `script.js`, sube ese número (por ejemplo a `v=9`) en `index.html` y en `familia-41b62f76.html`. Así los teléfonos que ya abrieron la invitación descargan la versión nueva en lugar de usar la que tienen guardada.
+Las dos páginas cargan `estilos.css?v=8` y `script.js?v=8`. Cada vez que cambies `estilos.css` o `script.js`, sube ese número (por ejemplo a `v=9`) en `index.html` y en `oficina.html`. Así los teléfonos que ya abrieron la invitación descargan la versión nueva en lugar de usar la que tienen guardada.
