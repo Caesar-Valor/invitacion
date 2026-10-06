@@ -294,7 +294,7 @@
 
   rsvp.querySelectorAll('.rsvp-btn').forEach(btn => btn.addEventListener('click', () => {
     const msg = btn.dataset.resp === 'si'
-      ? `¡Hola! 🎉 Confirmo que *SÍ podré ir* a la Fiesta Mexicana sorpresa de Margarita 🌮🎊\n📅 Sábado 24 de octubre, 7:00 PM\n📍 Terraza Los Abuelos, Beato${CUPO ? `\n🎟️ Invitación válida para ${CUPO} personas` : ''}\n¡Allí estaré! 🤫`
+      ? `¡Hola! 🎉 Confirmo que *SÍ podré ir* a la Fiesta Mexicana sorpresa de Margarita 🌮🎊\n📅 Sábado 24 de octubre, 7:00 PM\n📍 Terraza Los Abuelos, Beato${CUPO ? `\n🎟️ Invitación válida para ${CUPO} ${CUPO === '1' ? 'persona' : 'personas'}` : ''}\n¡Allí estaré! 🤫`
       : `Hola 😢 Lamentablemente *no podré ir* a la Fiesta Mexicana sorpresa de Margarita el sábado 24 de octubre. ¡Muchas gracias por la invitación y que la pasen increíble! 💖`;
     const url = `https://api.whatsapp.com/send?phone=${TEL}&text=${encodeURIComponent(msg)}`;
     if (btn.dataset.resp === 'si'){ festejar(); festejoPendiente = true; }
