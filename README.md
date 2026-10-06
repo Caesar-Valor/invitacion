@@ -77,4 +77,4 @@ Si cambias la fecha o el lugar, revisa también los mensajes de WhatsApp en `scr
 
 ## Al publicar cambios
 
-Las dos páginas cargan `estilos.css?v=5` y `script.js?v=5`. Cada vez que cambies `estilos.css` o `script.js`, sube ese número (por ejemplo a `v=6`) en `index.html` y en `familia-41b62f76.html`. Así los teléfonos que ya abrieron la invitación descargan la versión nueva en lugar de usar la que tienen guardada.
+Las dos páginas cargan `estilos.css?v=6` y `script.js?v=6`. Cada vez que cambies `estilos.css` o `script.js`, sube ese número (por ejemplo a `v=7`) en `index.html` y en `familia-41b62f76.html`. Así los teléfonos que ya abrieron la invitación descargan la versión nueva en lugar de usar la que tienen guardada.

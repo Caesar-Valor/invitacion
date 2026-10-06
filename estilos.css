@@ -113,10 +113,6 @@ body{
   margin:.4cqw 0 0;
 }
 .nombre-caja{position:relative;display:flex;flex-direction:column;align-items:center}
-.a-final{position:relative;display:inline-block}
-.a-final::after{ /* tilde decorativa de la última a */
-  content:"";position:absolute;right:.0em;top:.24em;width:.24em;height:.09em;
-  border-radius:1em;background:currentColor;transform:rotate(-32deg)}
 .rayos{position:absolute;top:50%;width:6.4cqw;height:auto;transform:translateY(-62%)}
 .rayos.izq{left:-6.4cqw}
 .rayos.der{right:-6.4cqw;transform:translateY(-62%) scaleX(-1)}
