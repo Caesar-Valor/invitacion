@@ -192,12 +192,17 @@ a.lugar:focus-visible{outline:2px solid var(--rosa);outline-offset:3px;border-ra
   display:inline-flex;align-items:center;gap:1cqw;
   font-weight:700;
   font-size:3.6cqw;
-  color:var(--morado);
-  margin-top:.4cqw;
+  line-height:1.2;
+  color:#ffd23f;                 /* amarillo sobre fondo morado para que se lea encima de las flores */
+  background:var(--morado);
+  padding:.5cqw 1cqw .5cqw 2.6cqw;
+  border-radius:4cqw;
+  box-shadow:0 .5cqw 0 rgba(0,0,0,.2);
+  margin-top:.5cqw;
   text-decoration:none;cursor:pointer;position:relative;
 }
-.confirmar-txt{border-bottom:.3cqw dashed rgba(79,31,110,.45);transition:color .3s,border-color .3s}
-.confirmar:hover .confirmar-txt,.confirmar:focus-visible .confirmar-txt{color:#1f9d55;border-color:#1f9d55}
+.confirmar-txt{transition:color .3s}
+.confirmar:hover .confirmar-txt,.confirmar:focus-visible .confirmar-txt{color:#fff}
 .confirmar:focus-visible{outline:2px solid #25d366;outline-offset:3px;border-radius:4px}
 .wa-ico{display:inline-flex;width:4.4cqw;height:4.4cqw;border-radius:50%;background:#25d366;
   align-items:center;justify-content:center;box-shadow:0 .4cqw 1cqw rgba(37,211,102,.4);animation:pulso 2s ease-in-out infinite}

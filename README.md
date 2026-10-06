@@ -23,6 +23,7 @@ Invitación digital animada para compartir por enlace. Es una sola página web, 
 | `estilos.css` | Colores, tamaños y animaciones |
 | `script.js` | Piñata, confeti, música, cuenta regresiva, mapa y WhatsApp |
 | `fondo.jpg` | Imagen de fondo de la tarjeta |
+| `favicon.png` | Icono de la pestaña del navegador (foto recortada a 192×192) |
 | `musica-bucle.mp3` | Fragmento de unos 20 segundos que suena en bucle |
 
 ## Cómo verla
@@ -31,7 +32,7 @@ Abre `index.html` con doble clic en cualquier navegador.
 
 ## Cómo publicarla
 
-Sube estos seis archivos juntos, en la misma carpeta, a cualquier servicio de páginas estáticas (por ejemplo Netlify, GitHub Pages o Vercel):
+Sube estos siete archivos juntos, en la misma carpeta, a cualquier servicio de páginas estáticas (por ejemplo Netlify, GitHub Pages o Vercel):
 
 ```
 index.html
@@ -39,6 +40,7 @@ familia-41b62f76.html
 estilos.css
 script.js
 fondo.jpg
+favicon.png
 musica-bucle.mp3
 ```
 
