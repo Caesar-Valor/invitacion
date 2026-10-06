@@ -18,7 +18,8 @@ Invitación digital animada para compartir por enlace. Es una sola página web, 
 
 | Archivo | Para qué sirve |
 | --- | --- |
-| `index.html` | Estructura y textos de la invitación |
+| `index.html` | Invitación normal: estructura y textos |
+| `familia-41b62f76.html` | La misma invitación con el aviso "Válida para 4 personas" |
 | `estilos.css` | Colores, tamaños y animaciones |
 | `script.js` | Piñata, confeti, música, cuenta regresiva, mapa y WhatsApp |
 | `fondo.jpg` | Imagen de fondo de la tarjeta |
@@ -30,15 +31,25 @@ Abre `index.html` con doble clic en cualquier navegador.
 
 ## Cómo publicarla
 
-Sube estos cinco archivos juntos, en la misma carpeta, a cualquier servicio de páginas estáticas (por ejemplo Netlify, GitHub Pages o Vercel):
+Sube estos seis archivos juntos, en la misma carpeta, a cualquier servicio de páginas estáticas (por ejemplo Netlify, GitHub Pages o Vercel):
 
 ```
 index.html
+familia-41b62f76.html
 estilos.css
 script.js
 fondo.jpg
 musica-bucle.mp3
 ```
+
+## Las dos invitaciones
+
+Hay dos enlaces, y cada invitado recibe solo el suyo:
+
+- **Normal:** el enlace principal del sitio (`index.html`).
+- **Para 4 personas:** el mismo enlace terminado en `familia-41b62f76.html`. Muestra "Válida para 4 personas" y lo añade al mensaje de confirmación de WhatsApp.
+
+El nombre del segundo archivo lleva un código al azar para que nadie lo adivine cambiando el enlace normal. Las dos páginas comparten `estilos.css` y `script.js`, pero los textos están repetidos: si cambias un texto en `index.html`, cámbialo también en `familia-41b62f76.html`.
 
 ## Cómo cambiar los datos
 

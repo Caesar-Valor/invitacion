@@ -161,6 +161,19 @@ a.lugar:focus-visible{outline:2px solid var(--rosa);outline-offset:3px;border-ra
 
 .separador{width:50cqw;height:auto;margin:.8cqw 0 .4cqw}
 
+/* Solo en la invitación familiar: cupo de personas */
+.cupo{
+  font-weight:800;
+  font-size:3.3cqw;
+  line-height:1.1;
+  color:#fff;
+  background:var(--morado);
+  padding:.5cqw 2.6cqw;
+  border-radius:4cqw;
+  margin-bottom:.8cqw;
+  white-space:nowrap;
+  box-shadow:0 .4cqw 0 rgba(0,0,0,.18);
+}
 .llevar{
   font-weight:800;
   font-size:4cqw;
@@ -404,3 +417,12 @@ a.lugar:focus-visible{outline:2px solid var(--rosa);outline-offset:3px;border-ra
   34%{transform:translate(-50%,-50%) rotate(-8deg) scale(1.05)}
   44%,80%{opacity:1;transform:translate(-50%,-50%) rotate(-6deg) scale(1)}
   100%{opacity:0;transform:translate(-50%,-90%) rotate(-6deg) scale(1.1)}}
+
+/* Invitación familiar: lleva una línea más (el cupo), así que se aprietan un poco los espacios */
+body[data-cupo] .titulo{margin-top:2cqw}
+body[data-cupo] .nombre{line-height:1.16}
+body[data-cupo] .hora,body[data-cupo] .lugar{margin-top:.4cqw}
+body[data-cupo] .cuenta{margin:.2cqw 0}
+body[data-cupo] .cupo{font-size:3.1cqw;margin-bottom:.5cqw}
+body[data-cupo] .llevar{font-size:3.8cqw}
+body[data-cupo] .detalle{font-size:3.7cqw;line-height:1.14;margin-top:.2cqw}

@@ -9,7 +9,7 @@
 
   /* Entrada escalonada (se llama cuando se abre el telón) */
   function iniciar(){
-    const orden = ['.sorpresa','.titulo','.nombre','.deco','.fecha','.hora','.lugar','.cuenta','.llevar','.detalle','.confirmar'];
+    const orden = ['.sorpresa','.titulo','.nombre','.deco','.fecha','.hora','.lugar','.cuenta','.llevar, .cupo','.detalle','.confirmar'];
     const tiempos = [200, 1000, 1900, 3400, 3600, 3850, 4100, 4350, 4600, 4800, 5050];
     orden.forEach((sel,i)=> setTimeout(()=>document.querySelectorAll(sel).forEach(el=>el.classList.add('ver')), quieto?0:tiempos[i]));
     setTimeout(()=>{ lluvia(90); document.querySelector('.toque').classList.add('ver'); }, quieto?0:2000);
@@ -257,6 +257,7 @@
 
   /* ---------- Confirmar asistencia por WhatsApp ---------- */
   const TEL = '18496532269';
+  const CUPO = document.body.dataset.cupo;   // solo la invitación familiar lo trae (p. ej. "4")
   const rsvp = document.getElementById('rsvpModal');
   const rsvpAviso = document.getElementById('rsvpAviso');
   function abrirRsvp(e){
@@ -293,7 +294,7 @@
 
   rsvp.querySelectorAll('.rsvp-btn').forEach(btn => btn.addEventListener('click', () => {
     const msg = btn.dataset.resp === 'si'
-      ? `¡Hola! 🎉 Confirmo que *SÍ podré ir* a la Fiesta Mexicana sorpresa de Margarita 🌮🎊\n📅 Sábado 24 de octubre, 7:00 PM\n📍 Terraza Los Abuelos, Beato\n¡Allí estaré! 🤫`
+      ? `¡Hola! 🎉 Confirmo que *SÍ podré ir* a la Fiesta Mexicana sorpresa de Margarita 🌮🎊\n📅 Sábado 24 de octubre, 7:00 PM\n📍 Terraza Los Abuelos, Beato${CUPO ? `\n🎟️ Invitación válida para ${CUPO} personas` : ''}\n¡Allí estaré! 🤫`
       : `Hola 😢 Lamentablemente *no podré ir* a la Fiesta Mexicana sorpresa de Margarita el sábado 24 de octubre. ¡Muchas gracias por la invitación y que la pasen increíble! 💖`;
     const url = `https://api.whatsapp.com/send?phone=${TEL}&text=${encodeURIComponent(msg)}`;
     if (btn.dataset.resp === 'si'){ festejar(); festejoPendiente = true; }
